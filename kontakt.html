@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Title of Page -->
+        <title>Pavlinic-project</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+        <!-- Our external CSS -->
+        <link href="style.css" rel="stylesheet">
+        <!--Font awesome icons-->
+        <script src="https://kit.fontawesome.com/25b016ed0f.js" crossorigin="anonymous"></script>
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,500&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- Our internal CSS -->
+        <style>
+            html, body {
+                height: 100%;
+            }
+            main {
+                height: 100%;
+            }
+            input, textarea {
+                margin: 5px 0;
+                padding: 10px;
+                width: 50%;
+                border-radius: 10px;
+                border: 1 black solid;
+                border-style: hidden;
+                background-color: #ACE0AE;
+            }
+            ::placeholder {
+                color: black;
+            }
+            main a, main a:visited {
+                background-color: #006400;
+                color: white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            @media (max-width: 965px) {
+                input, textarea {
+                    width: 75%;
+                }
+            }
+            @media (max-width: 576px) {
+                input, textarea {
+                    width: 100%;
+                }
+            }
+
+            footer {
+                margin-top: -375px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!-- Navigation -->
+        <nav class="container-fluid">		
+            <div class="nav-holder custom">
+                
+                <div class="nav-logo-wrapper">
+                    <h1>
+                        <a class="nav-logo" href="index.html">
+                            S.Dračić
+                        </a>
+                    </h1>
+                </div>
+
+                <div class="nav-toggler-wrapper">
+                    <button class="nav-toggler" aria-label="Open/Close Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="nav-list-wrapper">
+                    <ul class="nav-list">
+                        <li class="dropdown">
+                            <h2>
+                                <a href="#">Portfolio</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="portfolio.html">Animalizam</a></li>
+                                    <li><a href="portfolio.html">Pejzaž</a></li>
+                                    <li><a href="portfolio.html">Portreti</a></li>
+                                    <li><a href="portfolio.html">Ruine</a></li>
+                                </ul>								
+                            </h2>							
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="izlozbe.html">Izložbe</a>									
+                            </h2>							
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="biografija.html">Biografija</a>									
+                            </h2>								
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="kontakt.html">Kontakt</a>								
+                            </h2>							
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="container">
+
+            <h2>Kontakt</h2>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non diam ac neque placerat mattis in vitae odio. Vestibulum finibus sapien arcu, vel porttitor turpis gravida non. Maecenas efficitur viverra tortor ac vestibulum.</p>
+
+			<form>
+                <input type="text" placeholder="Ime"/>
+                <br/>
+                <input type="email" placeholder="E-mail">
+				<br/>
+				<textarea placeholder="Poruka"></textarea>
+                <br/>
+				<a href="#">Send</a>
+			</form>
+
+        </main>
+        
+        <footer class="container-fluid"> 
+			<div  class='row'>
+				<div  class='col-6 col-md-3'>					
+					<h4>About</h4>
+					<a  href='#'>Izlozbe</a><br>
+					<a  href='#'>Biografija</a><br>
+					<a  href='#'>Kontakt</a><br>
+
+				</div>
+				<div  class='col-6 col-md-3'>
+					<h4>Portfolio</h4>		
+					<a  href='#'>Animalizam</a><br>
+					<a  href='#'>Pejzaž</a><br>
+					<a  href='#'>Portreti</a><br>
+					<a  href='#'>Ruine</a><br>
+
+				</div>
+
+				<div  class='col-6 col-md-3'>
+					<h4>Stay in touch</h4>					
+						<i class="fab fa-instagram"></i>
+						<a  href='#'>Instagram</a><br>
+						<i class="fab fa-linkedin"></i>
+						<a  href='#'>LinkedIn</a>																					
+					
+				</div>
+				<div  class='col-6 col-md-3 profile'>
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/profil3.jpg">
+						<source media="(min-width: 577px) and (max-width: 965px)" srcset="img/profil2.jpg">
+						<source media="(min-width: 966px)" srcset="img/profil1.jpg">
+						<img class="first" src="2.jpg" alt="obama" style="width: 100%; border-radius: 100%;">
+					</picture>
+
+				</div>
+			</div>		
+
+			<h5>Copyright © 2020 Ivan Pavlinic - All Rights Reserved.</h5>
+		</footer>
+
+        <!-- Our internal JS -->
+        <script type="text/javascript">
+            // Variables
+            var navToggler = document.querySelector('button.nav-toggler'),
+                navList = document.querySelector('ul.nav-list');
+
+            navToggler.addEventListener('click', function() {
+                this.classList.toggle('open');
+                navList.parentElement.classList.toggle('open');
+            });
+        </script>
+
+    </body>
+</html>
