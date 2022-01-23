@@ -26,30 +26,61 @@
         <!-- Our internal CSS -->
         <style>
             html, body {
-                height: 100%;
+                
             }
-            main {
-                height: 100%;
+            main {                
+                text-align: center;            
+                padding-top: 20px;
+                background-color: #E0F0E0;
+                border-radius: 10px;
+                font-size: 16px;
 
             }
+            .contact{
+                max-width: 500px;   
+            }
+
             input, textarea {
                 margin: 5px 0;
                 padding: 10px;
-                width: 40%;
+                width: 75%;
                 border-radius: 10px;
                 border: 1 black solid;
                 border-style: hidden;
-                background-color: #ACE0AE;
+                background-color: white;
+                opacity: 0.5;
+            }
+            input:enabled{
+                border: 1 rgb(175, 38, 38) solid;
+            }
+            textarea{
+                height: 200px;
             }
             ::placeholder {
                 color: black;
-            }
+            }    
+            main a{
+                position: relative;
+                top: 10px;      
+                font-size: 20px;
+
+            }     
+     
             main a, main a:visited {
-                background-color: #006400;
+                background-color: #71ad73;
                 color: white;
-                padding: 10px;
+                padding: 10px 25px;
                 border-radius: 10px;
+                transition: all 0.5s;
+                opacity: 1;
             }
+            main a:hover{
+                position: relative;
+                top: 10px;   
+                background-color: #EFF7EF;
+                color: #71ad73;     
+                border-bottom: 1px solid #71ad73;        
+            } 
 
 
             @media (max-width: 965px) {
@@ -59,12 +90,11 @@
             }
             @media (max-width: 576px) {
                 input, textarea {
-                    width: 100%;
+                    width: 95%;
                 }
             }
 
-            footer {
-                margin-top: -375px;
+            footer {                                
                 padding: 0px 40px;
             }
         </style>
@@ -126,7 +156,7 @@
             </div>
         </nav>
 
-        <main class="container">
+        <main class="container contact">
 
             <h2>Kontakt</h2>
 

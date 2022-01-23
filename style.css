@@ -24,6 +24,14 @@ nav{
 	width: 100%;
 	z-index: 99;
 } 
+nav a:hover {
+	text-decoration: none;
+	color: white;
+}
+nav i{
+	position: absolute;
+	top: 25px;
+}
 ul{
 	margin-bottom: 0;
 	padding-left: 0;
@@ -32,8 +40,12 @@ ul{
 	flex-wrap: wrap;
 
 }
+nav h1 a, nav h2 a{	
+
+	transition: all 0.2s;
+}
 nav h2 a{	
-	padding: 10px 12px;
+	padding: 10px 12px;	
 }
 a:hover, a:visited{
 	color:rgb(0, 0, 0, 1);   
@@ -267,6 +279,7 @@ li a:hover {
 	text-align: left;
 	display: block;
 	width: auto;
+	transition: all 0.5s;
 }
 
 .dropdown-content a:hover {
