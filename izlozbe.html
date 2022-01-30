@@ -11,16 +11,16 @@
         <title>Pavlinic-project</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>		
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,500&family=Pacifico&display=swap" rel="stylesheet">
+
         <!-- Our external CSS -->
         <link href="style.css" rel="stylesheet">
         <!--Font awesome icons-->
         <script src="https://kit.fontawesome.com/25b016ed0f.js" crossorigin="anonymous"></script>
-        <!--Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,500&family=Pacifico&display=swap" rel="stylesheet">
-
+    
         <!-- Our internal CSS -->
         <style>
             article {
@@ -28,6 +28,16 @@
             }
             section {
                 padding: 5px 0;
+            }
+            h6{
+                font-family: 'Montserrat';
+                font-size: 14px;
+                line-height: 2px;	
+            }
+            @media (max-width: 991px) {
+                h3 {
+                    padding-top: 10px;
+                }
             }
         </style>
 
@@ -92,14 +102,14 @@
 
             <h2>Izlozbe</h2>
 
-            <section class="row">
+            <section class="row" style="padding-top: 0;">
                 <aside class="col-md-12 col-lg-4">
                     <img src="img/image.jpg">
                 </aside>
                 <article class="col-md-12 col-lg-8">
                     <h3>Izlozba</h3>
                     <h6>datum/vrijeme</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non diam ac neque placerat mattis in vitae odio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rhoncus est. Fusce fringilla, urna non dapibus lacinia, arcu sem dictum nisl, et auctor erat massa lacinia ante.</p>
                 </article>
             </section>
 
@@ -127,21 +137,23 @@
 
         </main>
         
-        <footer class="container-fluid"> 
+        <footer class="footer" > 
+			<hr>
+
 			<div  class='row'>
 				<div  class='col-6 col-md-3'>					
 					<h4>About</h4>
-					<a  href='#'>Izlozbe</a><br>
-					<a  href='#'>Biografija</a><br>
-					<a  href='#'>Kontakt</a><br>
+					<a  href='izlozbe.html'>Izlozbe</a><br>
+					<a  href='biografija.html'>Biografija</a><br>
+					<a  href='kontakt.html'>Kontakt</a><br>
 
 				</div>
 				<div  class='col-6 col-md-3'>
 					<h4>Portfolio</h4>		
-					<a  href='#'>Animalizam</a><br>
-					<a  href='#'>Pejzaž</a><br>
-					<a  href='#'>Portreti</a><br>
-					<a  href='#'>Ruine</a><br>
+					<a  href='portfolio.html'>Animalizam</a><br>
+					<a  href='portfolio.html'>Pejzaž</a><br>
+					<a  href='portfolio.html'>Portreti</a><br>
+					<a  href='portfolio.html'>Ruine</a><br>
 
 				</div>
 
@@ -154,13 +166,14 @@
 					
 				</div>
 				<div  class='col-6 col-md-3 profile'>
+                    <a href="index.html">
 					<picture>
 						<source media="(max-width: 576px)" srcset="img/profil3.jpg">
 						<source media="(min-width: 577px) and (max-width: 965px)" srcset="img/profil2.jpg">
 						<source media="(min-width: 966px)" srcset="img/profil1.jpg">
-						<img class="first" src="2.jpg" alt="obama" style="width: 100%; border-radius: 100%;">
+						<img class="first" src="2.jpg" style="width: 100%; border-radius: 100%;">
 					</picture>
-
+                    </a>
 				</div>
 			</div>		
 
