@@ -76,7 +76,7 @@ h4{
 }
 h5{
 	text-align: center;	
-	padding-top: 10px;
+	padding-top: 15px;
 	font-size: 16px;	
 	font-weight: 600;			
 }
@@ -105,7 +105,15 @@ picture {
 	flex-direction: row;
 	justify-content: left;
 }
-
+.profile img{
+	width: 100%;
+}
+@media (max-width: 576px) {
+	.profile img{
+		width: 100%;
+	}
+	
+}
 /*media------------------------------------------------------------------------------------------------------*/
 @media (max-width: 965px) {
 	nav h2 a{	

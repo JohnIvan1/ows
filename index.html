@@ -157,6 +157,7 @@
 				color: white;
 				font-family: 'Montserrat';
 				font-size: 50px;
+				font-weight: 600;
 				text-shadow: 0 2px 5px black;
 			}
 
@@ -169,6 +170,12 @@
 				margin-bottom: 0;
 
 			}
+			h5{
+				text-align: center;	
+				padding-top: 15px;
+				font-size: 16px;	
+				font-weight: 600;			
+			}
 			/* .carousel-inner > :nth-child(1){				
 				 background-image: url('img/por2.jpg');
 			}
@@ -179,6 +186,28 @@
 				 background-image: url('img/por11.jpg');
 			} */
 
+
+			
+			.footer h4 {
+				font-size: 21px;
+			}
+			.profile img{
+				width: 100%;
+			}
+			@media (max-width: 576px) {
+				.profile img{
+					width: 100%;
+				}
+			}
+			.h5 {
+				text-align: center;	
+				padding-top: 15px;
+				font-size: 16px;	
+				font-weight: 600;	
+			}
+			.footer {
+				margin-bottom: 20px;
+			}
 		</style>
 	</head>
 	<body>
@@ -302,31 +331,31 @@
 			<h3>Portfolio</h3>
 			<section  class='row'>
 				<div  class='col-12 col-sm-6 col-lg-4' style="padding: 5px;">
-					<a  href='#'>
+					<a  href='portfolio.html'>
 						<img src='img/por1.jpg' \>
 						<div class="kategorija">Animalizam</div>
 					</a>	
 				</div>
 				<div  class='col-12 col-sm-6 col-lg-4' style="padding: 5px;">
-					<a  href='#'>
+					<a  href='portfolio.html'>
 						<img src='img/por3.jpg' \>
 						<div class="kategorija">Marina</div>
 					</a>	
 				</div>
 				<div  class='col-12 col-sm-6 col-lg-4' style="padding: 5px;">
-					<a  href='#'>
+					<a  href='portfolio.html'>
 						<img src='img/por2.jpg' \>
 						<div class="kategorija">Pejzaž</div>
 					</a>	
 				</div>
 				<div  class='col-12 col-sm-6 col-lg-4' style="padding: 5px;">
-					<a  href='#'>
+					<a  href='portfolio.html'>
 						<img src='img/por13.jpg' \>
 						<div class="kategorija">Portreti</div>
 					</a>	
 				</div>
 				<div  class='col-12 col-sm-6 col-lg-4' style="padding: 5px;">
-					<a  href='#'>
+					<a  href='portfolio.html'>
 						<img src='img/por9.jpg' \>
 						<div class="kategorija">Ruine</div>
 					</a>	
@@ -336,12 +365,12 @@
 
 		</main>
 		
-        <footer class="footer" > 
+        <footer class="footer" style="padding-bottom: 20px;"> 
 			<hr>
 
 			<div  class='row'>
 				<div  class='col-6 col-md-3'>					
-					<h4>About</h4>
+					<h4>O meni</h4>
 					<a  href='izlozbe.html'>Izlozbe</a><br>
 					<a  href='biografija.html'>Biografija</a><br>
 					<a  href='kontakt.html'>Kontakt</a><br>
@@ -350,6 +379,7 @@
 				<div  class='col-6 col-md-3'>
 					<h4>Portfolio</h4>		
 					<a  href='portfolio.html'>Animalizam</a><br>
+					<a  href='portfolio.html'>Marina</a><br>
 					<a  href='portfolio.html'>Pejzaž</a><br>
 					<a  href='portfolio.html'>Portreti</a><br>
 					<a  href='portfolio.html'>Ruine</a><br>
@@ -357,7 +387,7 @@
 				</div>
 
 				<div  class='col-6 col-md-3'>
-					<h4>Stay in touch</h4>					
+					<h4>Ostanimo povezani</h4>					
 						<i class="fab fa-instagram"></i>
 						<a  href='#'>Instagram</a><br>
 						<i class="fab fa-linkedin"></i>
@@ -365,18 +395,18 @@
 					
 				</div>
 				<div  class='col-6 col-md-3 profile'>
-                    <a href="index.html">
+                    <a style="padding-top: 10px;" href="index.html">
 					<picture>
 						<source media="(max-width: 576px)" srcset="img/profil3.jpg">
 						<source media="(min-width: 577px) and (max-width: 965px)" srcset="img/profil2.jpg">
 						<source media="(min-width: 966px)" srcset="img/profil1.jpg">
-						<img class="first" src="2.jpg" style="width: 100%; border-radius: 100%;">
+						<img class="first" src="2.jpg" style="border-radius: 100%;">
 					</picture>
                     </a>
 				</div>
 			</div>		
 
-			<h5>Copyright © 2020 Ivan Pavlinic - All Rights Reserved.</h5>
+			<h5 class="h5">Copyright © 2020 Ivan Pavlinic - All Rights Reserved.</h5>
 		</footer>
 
 		<!-- Our internal JS -->
